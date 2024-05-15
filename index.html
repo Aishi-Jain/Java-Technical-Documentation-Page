@@ -475,6 +475,81 @@
                 </table>
             </article>
         </section>
+        <section class="main-section" id="Conditional_statements">
+            <header>Conditional Statements</header>
+            <article>
+                <p>
+                    In Java, you can use the following conditional statements to erform different actions for different decisions: 
+                </p>
+                <ul>
+                    <li>
+                        Use <code class="inline">if</code> to specify a block of code to be executed, if a specified condition is true
+                    </li>
+                    <li>
+                        Use <code class="inline">else</code>  to specify a block of code to be executed, if the same condition is false
+                    </li>
+                    <li>
+                        Use <code class="inline">else if</code>  to specify a new condition to test, if the first condition is false
+                    </li>
+                    <li>
+                        Use <code class="inline">switch</code> to specify many alternative blocks of code to be executed
+                    </li>
+                </ul>
+                <h3>If else statement</h3>
+                <code>
+                    int time = 20;
+                    if (time < 18) {
+                        System.out.println("Good day.");
+                    } 
+                    else {
+                        System.out.println("Good evening.");
+                    }
+                    // Outputs "Good evening."
+                </code>
+                <h3>Else if statement</h3>
+                <code>
+                    int time = 22;
+                    if (time < 10) {
+                        System.out.println("Good morning.");
+                    } 
+                    else if (time < 18) {
+                        System.out.println("Good day.");
+                    } 
+                    else {
+                        System.out.println("Good evening.");
+                    }
+                    // Outputs "Good evening."
+                </code>
+                <h3>Switch statement</h3>
+                <code>
+                    int day = 4;
+                    switch (day) {
+                        case 1:
+                        System.out.println("Monday");
+                        break;
+                        case 2:
+                            System.out.println("Tuesday");
+                            break;
+                        case 3:
+                            System.out.println("Wednesday");
+                            break;
+                        case 4:
+                            System.out.println("Thursday");
+                            break;
+                        case 5:
+                            System.out.println("Friday");
+                            break;
+                        case 6:
+                            System.out.println("Saturday");
+                            break;
+                        case 7:
+                            System.out.println("Sunday");
+                            break;
+                        }
+                        // Outputs "Thursday" (day 4)
+                </code>
+            </article>
+        </section>
     </main>
 </body>
 </html>
