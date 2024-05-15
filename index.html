@@ -243,27 +243,27 @@
                     In Java, there are different types of variables, for example:
                     <ul>
                         <li>
-                            String: 
+                            <code class="inline"> String:</code> 
                             <br>
                             stores text, such as "Hello". String values are surrounded by double quotes
                         </li>
                         <li>
-                            int:
+                            <code class="inline"> int:</code> 
                             <br>
                             stores integers (whole numbers), without decimals, such as 123 or -123
                         </li>
                         <li>
-                            float:
+                            <code class="inline"> float:</code>
                             <br>
                             stores floating point numbers, with decimals, such as 19.99 or -19.99
                         </li>
                         <li>
-                            char:
+                            <code class="inline">char:</code> 
                             <br>
                             stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
                         </li>
                         <li>
-                            boolean:
+                            <code class="inline"> boolean:</code>
                             <br>
                             stores values with two states: true or false
                         </li>
@@ -275,51 +275,117 @@
             <header>Declaring Variables</header>
             <article>
                 <p>
-                    To create a variable, you must specify the type and assign it a value:
-                    <br>
-                    <code>type variableName = value;</code>
-                    <br>
-                    Where type is one of Java's types (such as int or String), and variableName is the name of the variable (such as x or name). The equal sign is used to assign values to the variable.
-                    <br>
-                    To create a variable that should store text, look at the following example:
-                    <br>
-                    <code>
-                        String name = "John";
-                        System.out.println(name);
-                    </code>
-                    <br>
-                    To create a variable that should store a number, look at the following example:
-                    <br>
-                    <code>
-                        int myNum = 15;
-                        System.out.println(myNum);
-                    </code>
-                    <br>
-                    You can also declare a variable without assigning the value, and assign the value later:
-                    <br>
-                    <code>
-                        int myNum;
-                        myNum = 15;
-                        System.out.println(myNum);
-                    </code>
-                    <br>
-                    Note that if you assign a new value to an existing variable, it will overwrite the previous value:
-                    <br>
-                    <code>
-                        int myNum = 15;
-                        myNum = 20;  // myNum is now 20
-                        System.out.println(myNum);
-                    </code>
-                    <br>
-                    A demonstration of how to declare variables of other types:
-                    <br>
-                    <code>
-                        int myNum = 5;
-                        float myFloatNum = 5.99f;
-                        char myLetter = 'D';
-                        boolean myBool = true;
-                        String myText = "Hello";
-                    </code>
+                    <ul>
+                        <li>
+                            To create a variable, you must specify the type and assign it a value:
+                            <br>
+                            <code>type variableName = value;</code>
+                            <br>
+                            Where type is one of Java's types (such as int or String), and variableName is the name of the variable (such as x or name). The equal sign is used to assign values to the variable.
+                        </li>
+                        <li>
+                            To create a variable that should store text, look at the following example:
+                            <br>
+                            <code>
+                                String name = "John";
+                                System.out.println(name);
+                            </code>
+                        </li>
+                        <li>
+                            To create a variable that should store a number, look at the following example:
+                            <br>
+                            <code>
+                                int myNum = 15;
+                                System.out.println(myNum);
+                            </code>
+                        </li>
+                        <li>
+                            You can also declare a variable without assigning the value, and assign the value later:
+                            <br>
+                            <code>
+                                int myNum;
+                                myNum = 15;
+                                System.out.println(myNum);
+                            </code>
+                        </li>
+                        <li>
+                            Note that if you assign a new value to an existing variable, it will overwrite the previous value:
+                            <br>
+                            <code>
+                                int myNum = 15;
+                                myNum = 20;  // myNum is now 20
+                                System.out.println(myNum);
+                            </code>
+                        </li>
+                        <li>
+                            A demonstration of how to declare variables of other types:
+                            <br>
+                            <code>
+                                int myNum = 5;
+                                float myFloatNum = 5.99f;
+                                char myLetter = 'D';
+                                boolean myBool = true;
+                                String myText = "Hello";
+                            </code>
+                        </li>
+                        <li>
+                            To declare more than one variable of the same type, you can use a comma-separated list:
+                            <br>
+                            Instead of writing: 
+                            <br>
+                            <code>
+                                int x = 5;
+                                int y = 6;
+                                int z = 50;
+                                System.out.println(x + y + z);
+                            </code>
+                            <br>
+                            You can simply write:
+                            <br>
+                            <code>
+                                int x = 5, y = 6, z = 50;
+                                System.out.println(x + y + z);
+                            </code>
+                        </li>
+                    </ul>
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Display_variables">
+            <header>Display Variables</header>
+            <article>
+                <p>
+                    <ul>
+                        <li>
+                            The <code class="inline">println()</code> method is often used to display variables. 
+                            <br>
+                            To combine both text and a variable, use the <code class="inline">+</code> character:
+                            <br>
+                            <code>
+                                String name = "John";
+                                System.out.println("Hello " + name);
+                            </code>
+                        </li>
+                        <li>
+                            You can also use the <code class="inline">+</code> character to add a variable to another variable:
+                            <br>
+                            <code>
+                                String firstName = "John ";
+                                String lastName = "Doe";
+                                String fullName = firstName + lastName;
+                                System.out.println(fullName);
+                            </code>
+                        </li>
+                        <li>
+                            For numeric values, the <code class="inline">+</code> character works as a mathematical operator (notice that we use <code class="inline">int</code> (integer) variables here):
+                            <br>
+                            <code>
+                                int x = 5;
+                                int y = 6;
+                                System.out.println(x + y); // Print the value of x + y
+                            </code>
+                        </li>
+                    </ul>
                 </p>
             </article>
         </section>
