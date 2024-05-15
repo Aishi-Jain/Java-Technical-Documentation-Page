@@ -176,9 +176,7 @@
                     <code>C:\Users\Your Name>java -version</code>
                     <br>
                     If Java is installed, you will see something like this (depending on version):
-                    <br>
-                    <code>
-                        java version "11.0.1" 2018-10-16 LTS
+                    <code>java version "11.0.1" 2018-10-16 LTS
                         Java(TM) SE Runtime Environment 18.9 (build 11.0.1+13-LTS)
                         Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.1+13-LTS, mixed mode)
                     </code>
@@ -218,8 +216,7 @@
                         Write the following in the command line (cmd.exe):
                         <code>C:\Users\Your Name>java -version</code>
                         If Java was successfully installed, you will see something like this (depending on version):
-                        <code>
-                            java version "11.0.1" 2018-10-16 LTS
+                        <code>java version "11.0.1" 2018-10-16 LTS
                             Java(TM) SE Runtime Environment 18.9 (build 11.0.1+13-LTS)
                             Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.1+13-LTS, mixed mode)
                         </code>
@@ -240,8 +237,7 @@
                     <br>
                     Let's create our first Java file, called Main.java, which can be done in any text editor (like Notepad).
                     <br>
-                    <code>
-                        public class Main {
+                    <code>public class Main {
                             public static void main(String[] args) {
                             System.out.println("Hello World");
                             }
@@ -330,24 +326,21 @@
                         <li>
                             To create a variable that should store text, look at the following example:
                             <br>
-                            <code>
-                                String name = "John";
+                            <code>String name = "John";
                                 System.out.println(name);
                             </code>
                         </li>
                         <li>
                             To create a variable that should store a number, look at the following example:
                             <br>
-                            <code>
-                                int myNum = 15;
+                            <code>int myNum = 15;
                                 System.out.println(myNum);
                             </code>
                         </li>
                         <li>
                             You can also declare a variable without assigning the value, and assign the value later:
                             <br>
-                            <code>
-                                int myNum;
+                            <code>int myNum;
                                 myNum = 15;
                                 System.out.println(myNum);
                             </code>
@@ -355,8 +348,7 @@
                         <li>
                             Note that if you assign a new value to an existing variable, it will overwrite the previous value:
                             <br>
-                            <code>
-                                int myNum = 15;
+                            <code>int myNum = 15;
                                 myNum = 20;  // myNum is now 20
                                 System.out.println(myNum);
                             </code>
@@ -364,8 +356,7 @@
                         <li>
                             A demonstration of how to declare variables of other types:
                             <br>
-                            <code>
-                                int myNum = 5;
+                            <code>int myNum = 5;
                                 float myFloatNum = 5.99f;
                                 char myLetter = 'D';
                                 boolean myBool = true;
@@ -377,8 +368,7 @@
                             <br>
                             Instead of writing: 
                             <br>
-                            <code>
-                                int x = 5;
+                            <code>int x = 5;
                                 int y = 6;
                                 int z = 50;
                                 System.out.println(x + y + z);
@@ -386,8 +376,7 @@
                             <br>
                             You can simply write:
                             <br>
-                            <code>
-                                int x = 5, y = 6, z = 50;
+                            <code>int x = 5, y = 6, z = 50;
                                 System.out.println(x + y + z);
                             </code>
                         </li>
@@ -405,16 +394,14 @@
                             <br>
                             To combine both text and a variable, use the <code class="inline">+</code> character:
                             <br>
-                            <code>
-                                String name = "John";
+                            <code>String name = "John";
                                 System.out.println("Hello " + name);
                             </code>
                         </li>
                         <li>
                             You can also use the <code class="inline">+</code> character to add a variable to another variable:
                             <br>
-                            <code>
-                                String firstName = "John ";
+                            <code>String firstName = "John ";
                                 String lastName = "Doe";
                                 String fullName = firstName + lastName;
                                 System.out.println(fullName);
@@ -423,8 +410,7 @@
                         <li>
                             For numeric values, the <code class="inline">+</code> character works as a mathematical operator (notice that we use <code class="inline">int</code> (integer) variables here):
                             <br>
-                            <code>
-                                int x = 5;
+                            <code>int x = 5;
                                 int y = 6;
                                 System.out.println(x + y); // Print the value of x + y
                             </code>
@@ -540,8 +526,7 @@
                     </li>
                 </ul>
                 <h3>If else statement</h3>
-                <code>
-                    int time = 20;
+                <code>int time = 20;
                     if (time < 18) {
                         System.out.println("Good day.");
                     } 
@@ -551,8 +536,7 @@
                     // Outputs "Good evening."
                 </code>
                 <h3>Else if statement</h3>
-                <code>
-                    int time = 22;
+                <code>int time = 22;
                     if (time < 10) {
                         System.out.println("Good morning.");
                     } 
@@ -565,8 +549,7 @@
                     // Outputs "Good evening."
                 </code>
                 <h3>Switch statement</h3>
-                <code>
-                    int day = 4;
+                <code>int day = 4;
                     switch (day) {
                         case 1:
                         System.out.println("Monday");
@@ -615,8 +598,7 @@
                     When you know exactly how many times you want to loop through a block of code, use the <code class="inline">for</code> loop
                 </p>
                 <p>Syntax:</p>
-                <code>
-                    for (statement 1; statement 2; statement 3) {
+                <code>for (statement 1; statement 2; statement 3) {
                         // code block to be executed
                       }
                 </code>
@@ -630,8 +612,7 @@
                 <p>
                     The example below will print the numbers 0 to 4:
                 </p>
-                <code>
-                    for (int i = 0; i < 5; i++) {
+                <code>for (int i = 0; i < 5; i++) {
                         System.out.println(i);
                       }
                 </code>
@@ -640,16 +621,14 @@
                     The <code class="inline">while</code> loop loops through a block of code as long as a specified condition is true:
                 </p>
                 <p>Syntax:</p>
-                <code>
-                    while (condition) {
+                <code>while (condition) {
                         // code block to be executed
                       }
                 </code>
                 <p>
                     In the example below, the code in the loop will run, over and over again, as long as a variable (i) is less than 5:
                 </p>
-                <code>
-                    int i = 0;
+                <code>int i = 0;
                     while (i < 5) {
                         System.out.println(i);
                         i++;
@@ -660,15 +639,13 @@
                     The <code class="inline">do while</code> loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
                 </p>
                 <p>Syntax:</p>
-                <code>
-                    do {
+                <code>do {
                         // code block to be executed
                       }
                       while (condition);
                 </code>
                 <p>Example:</p>
-                <code>
-                    int i = 0;
+                <code>int i = 0;
                     do {
                         System.out.println(i);
                         i++;
