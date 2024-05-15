@@ -271,6 +271,58 @@
                 </p>
             </article>
         </section>
+        <section class="main-section" id="Declaring_variables">
+            <header>Declaring Variables</header>
+            <article>
+                <p>
+                    To create a variable, you must specify the type and assign it a value:
+                    <br>
+                    <code>type variableName = value;</code>
+                    <br>
+                    Where type is one of Java's types (such as int or String), and variableName is the name of the variable (such as x or name). The equal sign is used to assign values to the variable.
+                    <br>
+                    To create a variable that should store text, look at the following example:
+                    <br>
+                    <code>
+                        String name = "John";
+                        System.out.println(name);
+                    </code>
+                    <br>
+                    To create a variable that should store a number, look at the following example:
+                    <br>
+                    <code>
+                        int myNum = 15;
+                        System.out.println(myNum);
+                    </code>
+                    <br>
+                    You can also declare a variable without assigning the value, and assign the value later:
+                    <br>
+                    <code>
+                        int myNum;
+                        myNum = 15;
+                        System.out.println(myNum);
+                    </code>
+                    <br>
+                    Note that if you assign a new value to an existing variable, it will overwrite the previous value:
+                    <br>
+                    <code>
+                        int myNum = 15;
+                        myNum = 20;  // myNum is now 20
+                        System.out.println(myNum);
+                    </code>
+                    <br>
+                    A demonstration of how to declare variables of other types:
+                    <br>
+                    <code>
+                        int myNum = 5;
+                        float myFloatNum = 5.99f;
+                        char myLetter = 'D';
+                        boolean myBool = true;
+                        String myText = "Hello";
+                    </code>
+                </p>
+            </article>
+        </section>
     </main>
 </body>
 </html>
