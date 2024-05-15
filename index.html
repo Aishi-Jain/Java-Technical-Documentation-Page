@@ -550,6 +550,89 @@
                 </code>
             </article>
         </section>
+        <section class="main-section" id="Loops">
+            <header>Loops</header>
+            <article>
+                <p>
+                    Loops can execute a block of code as long as a specified condition is reached.
+                    <br>
+                    Loops are handy because they save time, reduce errors, and they make code more readable.
+                </p>
+                <p>
+                    There are 3 types of loops:
+                </p>
+                <ul>
+                    <li>For loop</li>
+                    <li>While loop</li>
+                    <li>Do while loop</li>
+                </ul>
+                <h3>For loop</h3>
+                <p>
+                    When you know exactly how many times you want to loop through a block of code, use the <code class="inline">for</code> loop
+                </p>
+                <p>Syntax:</p>
+                <code>
+                    for (statement 1; statement 2; statement 3) {
+                        // code block to be executed
+                      }
+                </code>
+                <p>
+                    <strong>Statement 1</strong> is executed (one time) before the execution of the code block.
+                    <br>
+                    <strong>Statement 2</strong> defines the condition for executing the code block.
+                    <br>
+                    <strong>Statement 3</strong> is executed (every time) after the code block has been executed.
+                </p>
+                <p>
+                    The example below will print the numbers 0 to 4:
+                </p>
+                <code>
+                    for (int i = 0; i < 5; i++) {
+                        System.out.println(i);
+                      }
+                </code>
+                <h3>While loop</h3>
+                <p>
+                    The <code class="inline">while</code> loop loops through a block of code as long as a specified condition is true:
+                </p>
+                <p>Syntax:</p>
+                <code>
+                    while (condition) {
+                        // code block to be executed
+                      }
+                </code>
+                <p>
+                    In the example below, the code in the loop will run, over and over again, as long as a variable (i) is less than 5:
+                </p>
+                <code>
+                    int i = 0;
+                    while (i < 5) {
+                        System.out.println(i);
+                        i++;
+                    }
+                </code>
+                <h3>Do while loop</h3>
+                <p>
+                    The <code class="inline">do while</code> loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+                </p>
+                <p>Syntax:</p>
+                <code>
+                    do {
+                        // code block to be executed
+                      }
+                      while (condition);
+                </code>
+                <p>Example:</p>
+                <code>
+                    int i = 0;
+                    do {
+                        System.out.println(i);
+                        i++;
+                    }
+                    while (i < 5);
+                </code>
+            </article>
+        </section>
     </main>
 </body>
 </html>
